@@ -19,8 +19,14 @@
       <v-divider></v-divider>
   
       <div>
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>Peña & Faura</strong>
       </div>
+      <div>
+        <section class="w-full text-center mt-16">
+			Diseñado por Remain Computers &copy; 2023
+	    </section>        
+      </div>
+
     </v-footer>
   </template>
   <script>
