@@ -1,7 +1,7 @@
 <template>
-  <HelloWorld />
+  <Carrusel/>
 </template>
 
 <script setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+  import Carrusel from '@/components/Carrusel.vue';
 </script>

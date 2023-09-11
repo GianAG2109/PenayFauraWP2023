@@ -1,12 +1,15 @@
 <template>
   <v-app>
     <default-bar />
-
-    <default-view />
+    <Home/>
+    <Maps/>
+    <FooterView/>
   </v-app>
 </template>
 
 <script setup>
+  import Home from '@/views/Home.vue';
   import DefaultBar from './AppBar.vue'
-  import DefaultView from './View.vue'
+  import FooterView from '@/views/FooterView.vue';
+  import Maps from '@/views/Maps.vue';
 </script>
