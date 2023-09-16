@@ -6,6 +6,11 @@
     <v-divider class="border-opacity-0" vertical></v-divider>
     <v-divider class="border-opacity-0" vertical></v-divider>
     <SociosVue/>
+    <v-divider class="border-opacity-0" vertical></v-divider>
+    <v-divider class="border-opacity-0" vertical></v-divider>
+    <Servicios/>
+    <v-divider class="border-opacity-0" vertical></v-divider>
+    <v-divider class="border-opacity-0" vertical></v-divider>
     <Contactenos/>
     <v-divider class="border-opacity-0" vertical></v-divider>
     <v-divider class="border-opacity-0" vertical></v-divider>
@@ -24,4 +29,5 @@
   import Contactenos from '@/views/Contactenos.vue';
 import AcercaDeNosotros from '@/views/AcercaDeNosotros.vue';
 import SociosVue from '@/views/Socios.vue';
+import Servicios from '@/views/Servicios.vue';
 </script>
