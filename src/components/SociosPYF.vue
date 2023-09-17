@@ -5,8 +5,13 @@
 			<h1 class="text-center pb-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-red-600">Socios</h1>
 		</v-sheet>      
     </div>
-    <v-divider class="border-opacity-0" vertical></v-divider>
-    <v-divider class="border-opacity-0" vertical></v-divider>
+    <div>
+        <v-divider class="border-opacity-0"></v-divider>
+        <v-divider class="border-opacity-0"></v-divider>
+        <v-divider class="border-opacity-0"></v-divider>
+        <v-divider class="border-opacity-0"></v-divider>
+        <v-divider class="border-opacity-0"></v-divider>
+    </div>
     <div>
         <v-row>
 
@@ -116,8 +121,13 @@
         </v-expand-transition>
     </v-card>
     </v-col>
-    <v-divider class="border-opacity-0" vertical></v-divider>
- 
+       
+</v-row>
+
+    <div>
+        <v-divider class="border-opacity-0" vertical></v-divider>
+    </div>
+<v-row>
  <!--Doctor Arnaiz-->
  <v-col>
              <v-card

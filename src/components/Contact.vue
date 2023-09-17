@@ -1,150 +1,111 @@
 <template>
-    <v-divider class="border-opacity-0" vertical></v-divider>
-    <v-divider class="border-opacity-0" vertical></v-divider>
+  
     <div>
-        
-        <v-sheet class="bg-red-lighten-1 text-center d-flex flex-column">
-			<h1 class="text-center pb-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-red-600">Contactenos</h1>
-		</v-sheet>
-        
-        
+      <v-sheet class="bg-red-lighten-1 text-center d-flex flex-column">
+			  <h1 class="text-center pb-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-red-600">Contactenos</h1>
+		  </v-sheet>
     </div>
-    <v-divider class="border-opacity-0" vertical></v-divider>
-   
-    
     <div>
+      <v-divider :thickness="20" class="border-opacity-0"></v-divider>
+    </div>
+    <div>
+
         <v-row>
-            <v-col>
-                <v-sheet
-                    class="d-flex align-center justify-center flex-wrap text-center mx-auto px-4"
-                    elevation="4"
-                    height="250"
-                    rounded
-                    max-width="800"
-                    width="90%"
-                >
-                <div>
-                    <h2 class="text-h5 font-weight-black text-red">Contactenos</h2>
-                    <v-car>
-                              <v-form v-model="valid">
-    <v-container>
-      <v-row>
-        <v-col
-          cols="12"
-          md="4"
-        >
-          <v-text-field
-            v-model="firstname"
-            :rules="nameRules"
-            :counter="10"
-            label="First name"
-            required
-            hide-details
-          ></v-text-field>
-        </v-col>
+          <v-col>
+            <v-card title="Contactenos" text=" "           class="mx-auto"
+            max-width="600">
+            <v-sheet width="400" class="mx-auto">
 
-        <v-col
-          cols="12"
-          md="4"
-        >
-          <v-text-field
-            v-model="lastname"
-            :rules="nameRules"
-            :counter="10"
-            label="Last name"
-            hide-details
-            required
-          ></v-text-field>
-        </v-col>
+<v-form ref="form">
+  <v-text-field
+    v-model="name"
+    :counter="10"
+    :rules="nameRules"
+    label="Name"
+    required
+  ></v-text-field>
 
-        <v-col
-          cols="12"
-          md="4"
-        >
-          <v-text-field
-            v-model="email"
-            :rules="emailRules"
-            label="E-mail"
-            hide-details
-            required
-          ></v-text-field>
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-form>
-                    </v-car>
-                </div>
-                </v-sheet>
-            </v-col>
-            <v-divider class="border-opacity-0" vertical></v-divider>
-            <v-col>
-                <v-sheet
-                    class="d-flex align-center justify-center flex-wrap text-center mx-auto px-4"
-                    elevation="4"
-                    height="250"
-                    rounded
-                    max-width="800"
-                    width="90%"
-                >
-                <div>
-                    
+  <v-select
+    v-model="select"
+    :items="items"
+    :rules="[v => !!v || 'Item is required']"
+    label="Item"
+    required
+  ></v-select>
 
+  <v-checkbox
+    v-model="checkbox"
+    :rules="[v => !!v || 'You must agree to continue!']"
+    label="Do you agree?"
+    required
+  ></v-checkbox>
 
+  <div class="d-flex flex-column">
+    <v-btn
+      color="success"
+      class="mt-4"
+      block
+      @click="validate"
+    >
+      Validate
+    </v-btn>
 
+    <v-btn
+      color="error"
+      class="mt-4"
+      block
+      @click="reset"
+    >
+      Reset Form
+    </v-btn>
+  </div>
+</v-form>
+</v-sheet>
+            </v-card>
+          </v-col>
+          <v-divider class="border-opacity-0" vertical></v-divider>
+          <v-col>
+            <v-card title="Card title" text="..." class="mx-auto" max-width="600">
 
-
-                    <h2 class="text-h5 font-weight-black text-red">Peña &amp;&nbsp;Faura – Asesores Consultores</h2>
-
-                    <strong>Dirección:</strong>&nbsp;Av. Alfredo Benavides 2150, Of. 402, Miraflores, Lima &#8211; Perú
-                    <strong>Socios:</strong>
-                    <h4>Mariano Peña Benavides</h4>
-                    <h4>Manuel Faura Bermúdez</h4>
-                    <h4>Susana Arnaiz Jibaja</h4>
-                    <h4>Luis Moscoso Delgado</h4>
-
-
-                </div>
-                </v-sheet>
-            </v-col>
+            </v-card>
+          </v-col>
         </v-row>
+      
     </div>
-    <v-divider class="border-opacity-0"></v-divider>
-    <v-divider class="border-opacity-0"></v-divider>
-    <v-divider class="border-opacity-0"></v-divider>
-    <v-divider class="border-opacity-0"></v-divider>
-
+    <div>
+      <v-divider :thickness="20" class="border-opacity-0"></v-divider>
+    </div>
 </template>
 <script>
   export default {
     data: () => ({
-      valid: false,
-      firstname: '',
-      lastname: '',
+      name: '',
       nameRules: [
-        value => {
-          if (value) return true
-
-          return 'Name is required.'
-        },
-        value => {
-          if (value?.length <= 10) return true
-
-          return 'Name must be less than 10 characters.'
-        },
+        v => !!v || 'Name is required',
+        v => (v && v.length <= 10) || 'Name must be less than 10 characters',
       ],
-      email: '',
-      emailRules: [
-        value => {
-          if (value) return true
-
-          return 'E-mail is requred.'
-        },
-        value => {
-          if (/.+@.+\..+/.test(value)) return true
-
-          return 'E-mail must be valid.'
-        },
+      select: null,
+      items: [
+        'Item 1',
+        'Item 2',
+        'Item 3',
+        'Item 4',
       ],
+      checkbox: false,
     }),
+
+    methods: {
+      async validate () {
+        const { valid } = await this.$refs.form.validate()
+
+        if (valid) alert('Form is valid')
+      },
+      reset () {
+        this.$refs.form.reset()
+      },
+      resetValidation () {
+        this.$refs.form.resetValidation()
+      },
+    },
   }
 </script>

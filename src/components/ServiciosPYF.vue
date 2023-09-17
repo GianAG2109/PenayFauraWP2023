@@ -1,6 +1,7 @@
 <template>
-    <v-expansion-panels>
-      <v-expansion-panel>
+  <div>
+    <v-expansion-panels class="mx-auto">
+      <v-expansion-panel >
         <v-expansion-panel-title>
           <template v-slot:default="{ expanded }">
             <v-row no-gutters>
@@ -70,6 +71,7 @@
       </v-expansion-panel>
   
     </v-expansion-panels>
+  </div>
   </template>
   <script>
   export default {
