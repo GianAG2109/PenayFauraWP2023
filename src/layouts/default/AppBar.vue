@@ -50,7 +50,7 @@
     >
       <v-toolbar-title>
         <v-img src="@/assets/Pena-y-Faura-17-07-15-11.jpg" max-width="50px" />
-        Peña & Faura
+        
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon

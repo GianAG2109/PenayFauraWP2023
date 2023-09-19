@@ -1,5 +1,5 @@
 <template>
-	<div class="carousel-container">
+<div>
 <v-carousel show-arrows="hover">
   <v-carousel-item
     src="../public/Imagenes/Carrusel/carrusel1.jpg"

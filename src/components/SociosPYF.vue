@@ -5,13 +5,7 @@
 			<h1 class="text-center pb-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-red-600">Socios</h1>
 		</v-sheet>      
     </div>
-    <div>
-        <v-divider class="border-opacity-0"></v-divider>
-        <v-divider class="border-opacity-0"></v-divider>
-        <v-divider class="border-opacity-0"></v-divider>
-        <v-divider class="border-opacity-0"></v-divider>
-        <v-divider class="border-opacity-0"></v-divider>
-    </div>
+
     <div>
         <v-row>
 

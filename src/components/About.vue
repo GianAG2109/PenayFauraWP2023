@@ -5,7 +5,9 @@
 			<h1 class="text-center pb-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-red-600">Acerca de nosotros</h1>
 		</v-sheet>
         
-        
+    <div>
+      <v-divider :thickness="20" class="border-opacity-0"></v-divider>
+    </div>    
     </div>
     <div class="d-flex align-center flex-column">
       <div class="text-subtitle-2">With props</div>
@@ -46,6 +48,9 @@
           This is content
         </v-card-text>
       </v-card>
+    </div>
+    <div>
+      <v-divider :thickness="20" class="border-opacity-0"></v-divider>
     </div>
   </template>
 <script>

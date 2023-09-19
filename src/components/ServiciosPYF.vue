@@ -22,6 +22,7 @@
     class="mx-auto"
     max-width="344"
   >
+  
     <v-card-text>
       <div>Servicio 1</div>
       <p class="text-h4 text--primary">
