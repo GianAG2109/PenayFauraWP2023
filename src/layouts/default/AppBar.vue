@@ -82,12 +82,23 @@
 <style scoped>
 .v-toolbar {
   transition: 0.6s;
+
 }
 
 .expand {
   height: 80px !important;
   padding-top: 10px;
 }
+.v-app-bar.v-toolbar{
+  background-color: #b64a4a;
+  
+}
+.v-navigation-drawer{
+  
+  background: transparent;
+}
+
+
 </style>
 
 <script>
