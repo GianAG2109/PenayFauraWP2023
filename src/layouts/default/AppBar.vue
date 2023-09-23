@@ -10,7 +10,7 @@
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <img src="@/assets/img/logo.png" alt="Logo" />
+            <img src="@/assets/Pena-y-Faura-17-07-15-11.jpg" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="title">Calango</v-list-item-title>
@@ -62,7 +62,7 @@
         <v-btn text @click="$vuetify.goTo('#Home')">
           <span class="mr-2">Home</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#features')">
+        <v-btn text @click="$vuetify.goTo('about')">
           <span class="mr-2">Quienes Somos</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#download')">
@@ -107,7 +107,7 @@ export default {
     drawer: null,
     isXs: false,
     items: [
-      ["mdi-home-outline", "Home", "#hero"],
+      ["mdi-home-outline", "home", "#about"],
       ["mdi-information-outline", "Sobre", "#features"],
       ["mdi-download-box-outline", "Download", "#download"],
       ["mdi-currency-usd", "Preços", "#pricing"],

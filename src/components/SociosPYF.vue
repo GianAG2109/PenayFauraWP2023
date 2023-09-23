@@ -1,16 +1,20 @@
 <template>
-
     <div>
         <v-sheet class="bg-red-lighten-1 text-center d-flex flex-column">
-			<h1 class="text-center pb-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-red-600">Socios</h1>
+		    <h1 class="text-center pb-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-red-600">Socios</h1>
 		</v-sheet>      
     </div>
-
+    
     <div>
-        <v-row>
+        <v-divider :thickness="20" class="border-opacity-0"></v-divider>
+    </div>
 
+
+
+<v-row align="center" justify="center">
+    <div>
     <!--Doctor Peña-->
-            <v-col>
+    <v-col>
                 <v-card
             class="mx-auto"
             max-width="344"
@@ -60,8 +64,11 @@
         </v-expand-transition>
     </v-card>
     </v-col>
-    <v-divider class="border-opacity-0" vertical></v-divider>
- 
+</div>
+<div>
+    <v-divider :thickness="20" class="border-opacity-0" vertical></v-divider>
+</div>
+<div>
     <!--Doctor Faura-->
     <v-col>
                 <v-card
@@ -115,18 +122,18 @@
         </v-expand-transition>
     </v-card>
     </v-col>
-       
-</v-row>
+</div>       
+<div>
+    <v-divider :thickness="20" class="border-opacity-0" vertical></v-divider>
+</div>
 
-    <div>
-        <v-divider class="border-opacity-0" vertical></v-divider>
-    </div>
-<v-row>
+<div>
  <!--Doctor Arnaiz-->
  <v-col>
              <v-card
-         class="mx-auto"
+             class="mx-auto"
          max-width="344"
+         
      >
      <v-img
          src="../assets/Socios/arnaiz2.jpg"
@@ -139,7 +146,7 @@
      </v-card-title>
 
      <v-card-subtitle>
-        Teléfono Fijo 447-3853/444-7906
+        Teléfonos Fijos : (511) 447-3853  (511) 444-7906
      </v-card-subtitle>
 
      <v-card-subtitle>
@@ -174,8 +181,14 @@ Idiomas: Español, Inglés, Alemán
      </v-expand-transition>
  </v-card>
  </v-col>
- <v-divider class="border-opacity-0" vertical></v-divider>
- 
+</div>
+
+<div>
+    <v-divider :thickness="20" class="border-opacity-0" vertical></v-divider>
+</div>
+
+
+ <div>
  <!--Doctor Moscoso-->
  <v-col>
              <v-card
@@ -228,17 +241,24 @@ Idiomas: Español, Inglés, Alemán
      </v-expand-transition>
  </v-card>
  </v-col>
-
-
-
-
-
-
+</div>
 </v-row>
 
 
 
+
+
+
+
+
  
+
+
+
+
+    
+    <div>
+        <v-divider :thickness="20" class="border-opacity-0"></v-divider>
     </div>
 
 
