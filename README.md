@@ -1,58 +1,25 @@
-# essentials
+# Proyecto de WebPage Estudio de Abogados Peña & Faura | Asociados Lima - Peru
 
-## Project setup
-
-```
-# yarn
-yarn
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-### Compiles and hot-reloads for development
+## Instalaciones
 
 ```
-# yarn
-yarn dev
+# Node 18
 
-# npm
-npm run dev
+# Gitbash y Github Desktop
 
-# pnpm
-pnpm dev
+# Visual Studio Code
 ```
-
-### Compiles and minifies for production
+## Para correr el proyecto
 
 ```
-# yarn
-yarn build
+# npm install
 
-# npm
-npm run build
-
-# pnpm
-pnpm build
+# npm run dev
 ```
+## Links referenciales sobre vuetify
 
-### Lints and fixes files
+https://vuejs.org/
+https://vuetifyjs.com/en/
 
-```
-# yarn
-yarn lint
 
-# npm
-npm run lint
-
-# pnpm
-pnpm lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
 # PenayFauraWP2023
