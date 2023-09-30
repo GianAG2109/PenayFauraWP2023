@@ -74,6 +74,8 @@
         <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
           <span class="mr-2">Contactenos</span>
         </v-btn>
+        <v-btn @click="toggleTheme" icon="$vuetify"></v-btn>
+        
       </div>
     </v-app-bar>
   </div>
@@ -101,41 +103,13 @@
 
 </style>
 
-<script>
-export default {
-  data: () => ({
-    drawer: null,
-    isXs: false,
-    items: [
-      ["mdi-home-outline", "home", "#about"],
-      ["mdi-information-outline", "Sobre", "#features"],
-      ["mdi-download-box-outline", "Download", "#download"],
-      ["mdi-currency-usd", "Preços", "#pricing"],
-      ["mdi-email-outline", "Contatos", "#contact"],
-    ],
-  }),
-  props: {
-    color: String,
-    flat: Boolean,
-  },
-  methods: {
-    onResize() {
-      this.isXs = window.innerWidth < 850;
-    },
-  },
+<script setup>
+import { useTheme } from 'vuetify'
 
-  watch: {
-    isXs(value) {
-      if (!value) {
-        if (this.drawer) {
-          this.drawer = false;
-        }
-      }
-    },
-  },
-  mounted() {
-    this.onResize();
-    window.addEventListener("resize", this.onResize, { passive: true });
-  },
-};
+const theme = useTheme()
+
+function toggleTheme () {
+  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+  
+}
 </script>
