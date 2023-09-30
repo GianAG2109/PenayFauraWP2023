@@ -1,4 +1,5 @@
 <template>
+  <v-responsive class="border pa-4">
   <div>
     <v-expansion-panels class="mx-auto">
       <v-expansion-panel >
@@ -73,6 +74,7 @@
   
     </v-expansion-panels>
   </div>
+</v-responsive>
   </template>
   <script>
   export default {

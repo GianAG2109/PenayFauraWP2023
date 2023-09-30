@@ -1,21 +1,16 @@
 <template>
-  
-    <div>
-      <v-sheet class="bg-red-lighten-1 text-center d-flex flex-column">
-			  <h1 class="text-center pb-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-red-600">Contactenos</h1>
-		  </v-sheet>
-    </div>
-    <div>
-        <v-divider :thickness="20" class="border-opacity-0"></v-divider>
-    </div>
-    <div>
-          <v-divider class="border-opacity-0" vertical></v-divider>
-    </div>
+
+    <v-responsive class="border pa-4">
+      
     <div>
       <v-row>
  
         <v-col>
-          <v-card text="..."></v-card>
+          
+            <v-responsive class="border pa-4">
+            <v-textarea label="Label"></v-textarea>
+          </v-responsive>
+          
         </v-col>
         <v-divider class="border-opacity-0" vertical></v-divider>
         <v-col>
@@ -23,9 +18,10 @@
         </v-col>
       </v-row>
     </div>
-    <div>
-        <v-divider :thickness="20" class="border-opacity-0"></v-divider>
-    </div>
+  
+
+  </v-responsive>
+
 </template>
 <script>
   export default {

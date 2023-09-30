@@ -10,7 +10,7 @@
     </div>
 
 
-
+    <v-responsive class="border pa-4">
 <v-row align="center" justify="center">
     <div>
     <!--Doctor Peña-->
@@ -243,7 +243,7 @@ Idiomas: Español, Inglés, Alemán
  </v-col>
 </div>
 </v-row>
-
+</v-responsive>
 
 
 
